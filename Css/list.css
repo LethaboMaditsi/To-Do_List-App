@@ -1,0 +1,21 @@
+:root{
+    --dark:#373737;
+    --blue:#1FFF;
+    --darkest:#111;
+    --light:#EEE;
+    --pink:#EC4899;
+    --green:#8B5C;
+    --gray:#6B7280;
+}
+*
+box-sizing:border-box;
+margin:
+font-family:'fira sans',sans-serif
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    background:var(--dark);
+    color:#1FFF;
+}
+
