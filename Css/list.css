@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color:#0D3B66;
+    color: #df6886;
 
 }
 
@@ -32,8 +33,7 @@ header h1 {
     display: flex;
 }
 
-input,
-button {
+input,button {
     appearance: none;
     border: none;
     outline: none;
@@ -47,14 +47,15 @@ button {
     border-radius: 1rem;
     margin-right: 1rem;
     font-size: 1.25rem;
-
+    color: aqua;
 }
 
 #task-submit {
+    background-color: aquamarine;
     color:#a2a833;
     font-size: 1.25rem;
     cursor: pointer;
-    transition: 4s;
+    transition: 0.4s;
 }
 
 #task-submit:hover {
@@ -62,7 +63,7 @@ button {
 }
 
 #task-submit: active {
-    opacity: 0, 6;
+    opacity: 0.6;
 }
 
 main {
