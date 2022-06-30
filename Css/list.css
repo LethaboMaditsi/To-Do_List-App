@@ -55,6 +55,7 @@ input,button {
     color:#a2a833;
     font-size: 1.25rem;
     cursor: pointer;
+    border-radius: 1rem;
     transition: 0.4s;
 }
 
