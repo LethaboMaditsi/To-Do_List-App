@@ -5,33 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
     <meta http-equiv="X-UA-compatible" content="IE-edge">
-    <tittle>ToDo App</tittle>
+    <tittle></tittle>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="Css/list.css">
-    
+
 </head>
 
 <body>
-   
+
     <div class="container">
-<h1>Todo List</h1>
-
-<!-- form -->
-<form action="" class="todo-form">
-    <input type="text" class="todo-input" placeholder="Add a task...">
-<!-- add button -->
-<button type="submit" class="add-button">Add</button>
-</form>
-<!-- todo list item -->
-<div class="file-list">
-<ul class="todo-items">
-
-
-</ul>
-</div>
+        <h1>Todo List</h1>
+        <div id="newtask">
+            <input type="text" placeholder="Task to be done..">
+            <button id="push">Add</button>
+        </div>
+        <div id="tasks"></div>
     </div>
-          
-    <script> src="JavaScript/list.js"</script>
+
+
+
+    <script type="text/javascript">
+        document.querySelector('#push').onclick = function () {
+            if (document.querySelector('#newtask input').value.length == 0) {
+                alert("Please Enter a Task")
+            }
+            else {
+                document.querySelector('#tasks').innerHTML += `
+                    <div class="task">
+                        <span id="taskname">
+                            ${document.querySelector('#newtask input').value}
+                        </span>
+                        <button class="delete">
+                            <i class="far fa-trash-alt">delete</i>
+                        </button>
+                    </div>
+                `;
+
+                var current_tasks = document.querySelectorAll(".delete");
+                for (var i = 0; i < current_tasks.length; i++) {
+                    current_tasks[i].onclick = function () {
+                        this.parentNode.remove();
+                    }
+                }
+
+
+
+
+            }
+        }
+    </script>
 </body>
+
 </html>
