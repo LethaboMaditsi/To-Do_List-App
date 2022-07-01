@@ -1,8 +1,7 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
   }
-
   body {
     display: flex;
     flex-direction: column;
@@ -13,19 +12,43 @@
      justify-content: center; 
      font-family: 'Times New Roman', Times, serif;
   }
-
   .container{
     min-width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-  }
-  
+  } 
   h1{
     color: aqua;
     font-size: 3rem;
   }
   .todo-form{
-    
+    margin: 40px 0px;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 2px;
   }
+.todo-input{
+    width: 250px;
+    outline: none;
+    border-radius: 3px;
+    padding: 12px;
+    border: 2px solid red;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+.todo-button{
+    background: yellowgreen;
+    color: rgb(19, 19, 10);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+}
+.file-list{
+    padding: 20px;
+    background: white;
+    border-radius: 3px;
+}
