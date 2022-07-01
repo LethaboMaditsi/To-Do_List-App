@@ -60,10 +60,30 @@ function renderTodos(todos) {
          }
 
          li.innerHTML =
-            <input type="checkbox" class="checkbox" ${checked} >
+            <input type="checkbox" class="checkbox" ${checked} ></input>
                 ${item.name}
                 <button class="delete-button">X</button>
              ;
-             /add</input>/  
-    }
+             
+             //add <li> to <ul>
+             todoItemsList.append(li);
+        });
+        
+}
+//function to add todos to locakl storage 
+function addToLocalStorage(todos) {
+    //convert the array to string an store it
+    localStorage.setItem('todos',JSON.stringify(todos));
+    //render them to screen
+    renderTodos(todo);
+}
+//get items from local storage
+function getFromLocalStorage(){
+const reference = localStorage.getItem('todos');
+//if reference exists
+
+if(reference){
+    todos =JSON.parse(reference);
+    renderTodos(todos);
+}
 }
