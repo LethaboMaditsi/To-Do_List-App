@@ -1,3 +1,4 @@
+/* input box place styling */
 *,
 *:before,
 *:after{
@@ -5,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 h1{color: rgb(104, 90, 8);
 text-align: center;}
 body{
@@ -43,6 +45,7 @@ body{
     outline: none;
     border-color: #0d75ec;
 }
+/* button  */
 #newtask button{
     position: relative;
     float: right;
@@ -58,6 +61,7 @@ body{
     border-radius: 5px;
     font-family: 'Poppins',sans-serif;
 }
+/*where you view information styling*/
 #tasks{
     border-radius: 10px;
     width: 100%;
